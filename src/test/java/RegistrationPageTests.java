@@ -1,6 +1,9 @@
+import dev.failsafe.internal.util.Assert;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import static io.qameta.allure.Allure.step;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static utils.RandomUtils.*;
 
 public class RegistrationPageTests extends BaseTest {
@@ -57,4 +60,32 @@ public class RegistrationPageTests extends BaseTest {
                 .checkResult("State and City", state + " " + city);
         });
     }
+
+    @Test
+    void someNegativeTest() {
+        assertTrue(false);
+    }
+
+    @Test
+    void someNegativeTest1() {
+        assertTrue(false);
+    }
+
+    @Test
+    void someNegativeTest2() {
+        assertTrue(false);
+    }
+
+    @Test
+    @Disabled
+    void someSkippedTest() {
+        assertTrue(false);
+    }
+
+    @Test
+    @Disabled("Some reason")
+    void someSkippedTest1() {
+        assertTrue(false);
+    }
+
 }
