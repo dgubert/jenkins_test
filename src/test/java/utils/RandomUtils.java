@@ -67,8 +67,8 @@ public class RandomUtils {
     public static String getCity(String state) {
         return switch (state) {
             case "NCR" -> getRandomItemFromArray(new String[] {"Delhi", "Gurgaon", "Noida"});
-            case "Uttar Pradesh" -> getRandomItemFromArray(new String[] {"Lucknow", "Mathura", "Varanasi"});
-            case "Haryana" -> getRandomItemFromArray(new String[] {"Chandigarh", "Gurgaon", "Karnal"});
+            case "Uttar Pradesh" -> getRandomItemFromArray(new String[] {"Agra", "Lucknow", "Merrut"});
+            case "Haryana" -> getRandomItemFromArray(new String[] {"Panipat", "Karnal"});
             case "Rajasthan" -> getRandomItemFromArray(new String[] {"Jaipur", "Jaisalmer"});
             default -> throw new IllegalArgumentException("Invalid state");
         };
